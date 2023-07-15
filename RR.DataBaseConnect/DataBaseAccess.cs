@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using RR.Models;
 using RR.Models.EmployeeInfo;
+using RR.Models.OtherRewardsInfo;
 using RR.Models.PeerToPeerInfo;
 using RR.Models.Rewards_Campaigns;
 
@@ -26,6 +27,15 @@ namespace RR.DataBaseConnect
         public DbSet<PeerToPeer> PeerToPeer { get; set; }
 
         public DbSet<PeerToPeerResults> PeerToPeerResults { get; set; }
+
+        public DbSet<OtherRewards> OtherRewards { get; set; }
+        public DbSet<LeadCitation> LeadCitation { get; set; }
+
+        public DbSet<LeadCitationReplies> LeadCitationReplies { get; set; }
+
+        public DbSet<OtherRewardResults> OtherRewardResults { get; set; }
+
+       
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
